@@ -56,7 +56,15 @@ Future<Uint8List> createImageFromWidget(
       child: repaintBoundary,
     ),
     configuration: ViewConfiguration(
-      size: Size(docWidth, docHeight),
+      //size: Size(docWidth, docHeight),
+      physicalConstraints: BoxConstraints(
+      maxWidth: docWidth,
+      maxHeight: docHeight,
+    ),
+    logicalConstraints: BoxConstraints(
+      maxWidth: docWidth,
+      maxHeight: docHeight,
+    ),
       devicePixelRatio: view.devicePixelRatio,
     ),
   );
