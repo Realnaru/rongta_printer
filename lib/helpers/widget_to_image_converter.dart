@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 /// The default width used for creating an image from a widget.
-const double _kDefaultWidth = 500.0;
+const double _kDefaultWidth = 384.0;
 
 /// The default height used for creating an image from a widget.
-const double _kDefaultHeight = 3000.0;
+const double _kDefaultHeight = 800.0;
 
 /// Creates an image from the given widget.
 ///
